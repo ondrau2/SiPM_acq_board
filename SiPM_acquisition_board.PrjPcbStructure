@@ -10,4 +10,5 @@ Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_Sensor_Frontend|SchDes
 Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_Sensor_Frontend|SchDesignator=U_Sensor_Frontend|FileName=Sensor_Frontend.SchDoc|SheetNumber=1|SymbolType=Normal|RawFileName=Sensor_Frontend.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_Sensor_Frontend|SchDesignator=U_Sensor_Frontend|FileName=Sensor_Frontend.SchDoc|SheetNumber=1|SymbolType=Normal|RawFileName=Sensor_Frontend.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=Top.SchDoc|Designator=U_System_power|SchDesignator=U_System_power|FileName=System_power.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=System_power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=Top.SchDoc|FileName=Ananlog_frontend.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Top.SchDoc|FileName=Comparator.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Top.SchDoc|FileName=DAC.SchDoc|SheetNumber=1
