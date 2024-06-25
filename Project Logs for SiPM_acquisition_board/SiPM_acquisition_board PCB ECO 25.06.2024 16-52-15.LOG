@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=S? NewDesignator=S1
+Change Component Designator: OldDesignator=S? NewDesignator=S2
+Added Pin To Net: NetName=NetD3_2 Pin=K1-1
+Added Pin To Net: NetName=NetD3_1 Pin=K1-8
+Added Member To Class: ClassName=U_MCU Member=Component S1 B3S-1000

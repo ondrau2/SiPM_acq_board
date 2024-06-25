@@ -1,0 +1,87 @@
+Add Component: Footprint Not Found sm_cap_0603
+Add Component: Footprint Not Found sm_cap_0603
+Add Component: Footprint Not Found SMD_SOD-123
+Add Component: Footprint Not Found SM_mch_FIDUCIAL
+Add Component: Footprint Not Found SM_mch_FIDUCIAL
+Add Component: Footprint Not Found SM_mch_FIDUCIAL
+Add Component: Footprint Not Found SM_SOLDER_JUMPER_3PIN
+Add Component: Footprint Not Found RELAY_1462037-1
+Add Component: Footprint Not Found RELAY_1462037-1
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found sm_res_0603
+Add Component: Footprint Not Found B3S-1000
+Add Component: Footprint Not Found B3S-1000
+Add Component: Footprint Not Found SOP50P490X110-10N
+Add Component: Footprint Not Found XTAL_ECS-.327-6-34S-TR
+Add Pin To Net: Unknown Pin: Pin C49-1
+Add Pin To Net: Unknown Pin: Pin C49-2
+Add Pin To Net: Unknown Pin: Pin C50-1
+Add Pin To Net: Unknown Pin: Pin C50-2
+Add Pin To Net: Unknown Pin: Pin D7-1
+Add Pin To Net: Unknown Pin: Pin D7-2
+Add Pin To Net: Unknown Pin: Pin J5-1
+Add Pin To Net: Unknown Pin: Pin J5-2
+Add Pin To Net: Unknown Pin: Pin J5-3
+Add Pin To Net: Unknown Pin: Pin K1-2
+Add Pin To Net: Unknown Pin: Pin K1-3
+Add Pin To Net: Unknown Pin: Pin K1-4
+Add Pin To Net: Unknown Pin: Pin K1-5
+Add Pin To Net: Unknown Pin: Pin K1-6
+Add Pin To Net: Unknown Pin: Pin K1-7
+Add Pin To Net: Unknown Pin: Pin K2-1
+Add Pin To Net: Unknown Pin: Pin K2-8
+Add Pin To Net: Unknown Pin: Pin R48-1
+Add Pin To Net: Unknown Pin: Pin R48-2
+Add Pin To Net: Unknown Pin: Pin R49-1
+Add Pin To Net: Unknown Pin: Pin R49-2
+Add Pin To Net: Unknown Pin: Pin R50-1
+Add Pin To Net: Unknown Pin: Pin R50-2
+Add Pin To Net: Unknown Pin: Pin R51-1
+Add Pin To Net: Unknown Pin: Pin R51-2
+Add Pin To Net: Unknown Pin: Pin R52-1
+Add Pin To Net: Unknown Pin: Pin R52-2
+Add Pin To Net: Unknown Pin: Pin R53-1
+Add Pin To Net: Unknown Pin: Pin R53-2
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Add Pin To Net: Unknown Pin: Pin S2-1
+Add Pin To Net: Unknown Pin: Pin S2-2
+Add Pin To Net: Unknown Pin: Pin S2-3
+Add Pin To Net: Unknown Pin: Pin S2-4
+Add Pin To Net: Unknown Pin: Pin U7-1
+Add Pin To Net: Unknown Pin: Pin U7-2
+Add Pin To Net: Unknown Pin: Pin U7-3
+Add Pin To Net: Unknown Pin: Pin U7-4
+Add Pin To Net: Unknown Pin: Pin U7-5
+Add Pin To Net: Unknown Pin: Pin U7-6
+Add Pin To Net: Unknown Pin: Pin U7-7
+Add Pin To Net: Unknown Pin: Pin U7-8
+Add Pin To Net: Unknown Pin: Pin U7-9
+Add Pin To Net: Unknown Pin: Pin U7-10
+Add Pin To Net: Unknown Pin: Pin Y2-1
+Add Pin To Net: Unknown Pin: Pin Y2-2
+Add Class Member: Failed to add class member : Component C49 10nF/50V/X7R
+Add Class Member: Failed to add class member : Component C50 10nF/50V/X7R
+Add Class Member: Failed to add class member : Component D7 *
+Add Class Member: Failed to add class member : Component FID1 Fiducial
+Add Class Member: Failed to add class member : Component FID2 Fiducial
+Add Class Member: Failed to add class member : Component FID3 Fiducial
+Add Class Member: Failed to add class member : Component J5 SMD jumper
+Add Class Member: Failed to add class member : Component K1 IM01GR
+Add Class Member: Failed to add class member : Component K2 (KA) IM01GR
+Add Class Member: Failed to add class member : Component R48 10k/1%
+Add Class Member: Failed to add class member : Component R49 10k/1%
+Add Class Member: Failed to add class member : Component R50 10k/1%
+Add Class Member: Failed to add class member : Component R51 470R/1%
+Add Class Member: Failed to add class member : Component R52 470R/1%
+Add Class Member: Failed to add class member : Component R53 470R/1%
+Add Class Member: Failed to add class member : Component S1 B3S-1000
+Add Class Member: Failed to add class member : Component S2 B3S-1000
+Add Class Member: Failed to add class member : Component U7 (U6) MCP4728-E/UN
+Add Class Member: Failed to add class member : Component Y2 (Y) ECS-.327-6-34S-TR

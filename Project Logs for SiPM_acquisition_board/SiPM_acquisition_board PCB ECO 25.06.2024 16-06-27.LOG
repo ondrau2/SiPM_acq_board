@@ -1,0 +1,18 @@
+Added Component: Designator=U7(MSOP-10)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP4728-E-UN?qs=E6wAi2XWqcP2zTenScklGA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "MSOP-10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "MCP4728-E/UN"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC55_2 Pin=U7-1
+Added Pin To Net: NetName=DAC_I2C_SCL Pin=U7-2
+Added Pin To Net: NetName=DAC_I2C_SDA Pin=U7-3
+Added Pin To Net: NetName=DAC_nLDAC Pin=U7-4
+Added Pin To Net: NetName=DAC_RDY Pin=U7-5
+Added Pin To Net: NetName=NetR68_2 Pin=U7-6
+Added Pin To Net: NetName=NetR69_2 Pin=U7-7
+Added Pin To Net: NetName=NetR70_2 Pin=U7-8
+Added Pin To Net: NetName=NetR71_2 Pin=U7-9
+Added Pin To Net: NetName=GND-A Pin=U7-10
+Added Member To Class: ClassName=U_MCU Member=Component S? B3S-1000
+Added Member To Class: ClassName=U_DAC Member=Component U7 MCP4728-E/UN

@@ -1,0 +1,216 @@
+Removed Member From Class: ClassName=U_Bias Member=J5
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=J7
+Removed Member From Class: ClassName=U_Bias Member=R46
+Removed Member From Class: ClassName=U_Bias Member=R49
+Removed Member From Class: ClassName=U_Communication Member=R49
+Removed Member From Class: ClassName=U_Amplifier1 Member=R106
+Removed Member From Class: ClassName=U_Amplifier2 Member=R106
+Removed Member From Class: ClassName=U_Amplifier3 Member=R106
+Removed Member From Class: ClassName=U_Comparator1 Member=R106
+Removed Member From Class: ClassName=U_Comparator2 Member=R106
+Removed Member From Class: ClassName=U_DAC Member=R106
+Removed Member From Class: ClassName=U_ESP_module Member=R106
+Removed Member From Class: ClassName=U_MCU Member=R106
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R106
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=R106
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R106
+Removed Member From Class: ClassName=U_Amplifier1 Member=R107
+Removed Member From Class: ClassName=U_Amplifier2 Member=R107
+Removed Member From Class: ClassName=U_Amplifier3 Member=R107
+Removed Member From Class: ClassName=U_Comparator1 Member=R107
+Removed Member From Class: ClassName=U_Comparator2 Member=R107
+Removed Member From Class: ClassName=U_DAC Member=R107
+Removed Member From Class: ClassName=U_ESP_module Member=R107
+Removed Member From Class: ClassName=U_MCU Member=R107
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R107
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=R107
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R107
+Added Component: Designator=K1(RELAY_1462037-1)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/TE-Connectivity-PB/IM01GR?qs=kJlCKCzaZTN1lvAfLPfsqA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "IM01GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "IM01GR"; VariantName = "[No Variations]"
+Added Component: Designator=K2(RELAY_1462037-1)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/TE-Connectivity-PB/IM01GR?qs=kJlCKCzaZTN1lvAfLPfsqA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "IM01GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "IM01GR"; VariantName = "[No Variations]"
+Added Component: Designator=R50(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Added Component: Designator=R51(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Added Component: Designator=R52(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Added Component: Designator=R53(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-07220RL?qs=sGAEpiMZZMvdGkrng054t8Tx25L%252BvTaRNoHZ%252BdTMAnY%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-07220RL"; VariantName = "[No Variations]"
+Added Component: Designator=R54(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-07220RL?qs=sGAEpiMZZMvdGkrng054t8Tx25L%252BvTaRNoHZ%252BdTMAnY%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-07220RL"; VariantName = "[No Variations]"
+Added Component: Designator=R55(sm_res_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-07220RL?qs=sGAEpiMZZMvdGkrng054t8Tx25L%252BvTaRNoHZ%252BdTMAnY%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-07220RL"; VariantName = "[No Variations]"
+Added Component: Designator=S?(B3S-1000)
+Add component (AddParameter): Name = "Distributor"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "http://cz.mouser.com/ProductDetail/Omron-Electronics/B3S-1000/?qs=sGAEpiMZZMsgGjVA3toVBGvOmVUWX0m0fClzO%252bgxoEQ%3d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "OMRON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "6 mm x 6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "B3S-1000"; VariantName = "[No Variations]"
+Added Component: Designator=S?(B3S-1000)
+Add component (AddParameter): Name = "Distributor"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "http://cz.mouser.com/ProductDetail/Omron-Electronics/B3S-1000/?qs=sGAEpiMZZMsgGjVA3toVBGvOmVUWX0m0fClzO%252bgxoEQ%3d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "OMRON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "6 mm x 6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "B3S-1000"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SOP50P490X110-10N
+Added Component: Designator=Y2(XTAL_ECS-.327-6-34S-TR)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/ECS/ECS-327-6-34QS-TR?qs=%2FnKYMpMO73M8kCG5qF34Vw%3D%3D&utm_id=9873308831&gad_source=1&gclid=EAIaIQobChMI2afi9vT2hgMVcwsGAB0wVgxSEAAYAiAAEgIbtPD_BwE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ECS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "3.2 mm x 1.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ECS-.327-6-34S-TR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC75_2 Pin=K1-2
+Added Pin To Net: NetName=NetK1_3 Pin=K1-3
+Added Pin To Net: NetName=NetC80_2 Pin=K1-4
+Added Pin To Net: NetName=NetC80_2 Pin=K1-5
+Added Pin To Net: NetName=NetK1_6 Pin=K1-6
+Added Pin To Net: NetName=NetC70_2 Pin=K1-7
+Added Pin To Net: NetName=NetD3_1 Pin=K2-1
+Added Pin To Net: NetName=NetD3_2 Pin=K2-8
+Added Pin To Net: NetName=NetC50_2 Pin=R50-1
+Added Pin To Net: NetName=+3V3 Pin=R50-2
+Added Pin To Net: NetName=NetC51_2 Pin=R51-1
+Added Pin To Net: NetName=+3V3 Pin=R51-2
+Added Pin To Net: NetName=NetC49_2 Pin=R52-1
+Added Pin To Net: NetName=+3V3 Pin=R52-2
+Added Pin To Net: NetName=GPB-0 Pin=R53-1
+Added Pin To Net: NetName=NetC50_2 Pin=R53-2
+Added Pin To Net: NetName=GPB-1 Pin=R54-1
+Added Pin To Net: NetName=NetC51_2 Pin=R54-2
+Added Pin To Net: NetName=nRST Pin=R55-1
+Added Pin To Net: NetName=NetC49_2 Pin=R55-2
+Added Pin To Net: NetName=GND Pin=S?-1
+Added Pin To Net: NetName=GND Pin=S?-1
+Added Pin To Net: NetName=GND Pin=S?-2
+Added Pin To Net: NetName=GND Pin=S?-2
+Added Pin To Net: NetName=NetC50_2 Pin=S?-3
+Added Pin To Net: NetName=NetC51_2 Pin=S?-3
+Added Pin To Net: NetName=NetC50_2 Pin=S?-4
+Added Pin To Net: NetName=NetC51_2 Pin=S?-4
+Add Pin To Net: Unknown Pin: Pin U7-1
+Add Pin To Net: Unknown Pin: Pin U7-2
+Add Pin To Net: Unknown Pin: Pin U7-3
+Add Pin To Net: Unknown Pin: Pin U7-4
+Add Pin To Net: Unknown Pin: Pin U7-5
+Add Pin To Net: Unknown Pin: Pin U7-6
+Add Pin To Net: Unknown Pin: Pin U7-7
+Add Pin To Net: Unknown Pin: Pin U7-8
+Add Pin To Net: Unknown Pin: Pin U7-9
+Add Pin To Net: Unknown Pin: Pin U7-10
+Added Pin To Net: NetName=NetU5_3 Pin=Y2-1
+Added Pin To Net: NetName=NetU5_4 Pin=Y2-2
+Added Member To Class: ClassName=U_MCU Member=Component C51 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component J8 (J6) S3B-XH-A-1
+Added Member To Class: ClassName=Top Member=Component K1 IM01GR
+Added Member To Class: ClassName=Top Member=Component K2 (K1A) IM01GR
+Added Member To Class: ClassName=U_Bias Member=Component R25 D.N.P.
+Added Member To Class: ClassName=U_Bias Member=Component R26 12k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R27 0R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R28 10k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R29 1k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R30 47k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R31 8k2/1%
+Added Member To Class: ClassName=U_Bias Member=Component R33 750R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R34 4k7/1%
+Added Member To Class: ClassName=U_Bias Member=Component R36 2k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R37 10R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R38 0R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R41 100R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R42 100R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R43 27R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R44 27R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R45 220R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R47 100R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R50 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R51 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R52 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R53 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R54 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R55 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R56 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R57 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R58 220R/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R59 10k/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R60 27R/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R61 27R/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R62 10k/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R63 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R64 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R65 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R66 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R67 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R68 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R69 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R70 10k/1%
+Added Member To Class: ClassName=U_DAC Member=Component R71 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R72 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R73 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R74 D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R75 (R72) 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R76 (R73) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R77 (R74) D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R78 (R72) 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R79 (R73) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R80 (R74) D.N.P.
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R81 (R75) 2k4/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R82 (R76) 50R/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R83 (R77) D.N.P.
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R84 (R78) 0R/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R85 (R79) D.N.P.
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R86 (R80) D.N.P.
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R87 (R81) 220R/1%
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R88 (R75) 2k4/1%
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R89 (R76) 50R/1%
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R90 (R77) D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R91 (R78) 0R/1%
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R92 (R79) D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R93 (R80) D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R94 (R81) 220R/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R95 (R75) 2k4/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R96 (R76) 50R/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R97 (R77) D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R98 (R78) 0R/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R99 (R79) D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R100 (R80) D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R101 (R81) 220R/1%
+Added Member To Class: ClassName=U_Comparator1 Member=Component R102 (R82) D.N.P.
+Added Member To Class: ClassName=U_Comparator1 Member=Component R103 (R83) 0R/1%
+Added Member To Class: ClassName=U_Comparator2 Member=Component R104 (R82) D.N.P.
+Added Member To Class: ClassName=U_Comparator2 Member=Component R105 (R83) 0R/1%
+Added Member To Class: ClassName=U_MCU Member=Component S? B3S-1000
+Added Member To Class: ClassName=U_MCU Member=Component S? B3S-1000
+Add Class Member: Failed to add class member : Component U7 MCP4728-E/UN
+Added Member To Class: ClassName=U_MCU Member=Component Y2 ECS-.327-6-34S-TR
