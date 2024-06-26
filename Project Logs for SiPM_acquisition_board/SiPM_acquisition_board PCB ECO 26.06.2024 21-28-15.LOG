@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=nRST Pin=U4-11
+Added Pin To Net: NetName=W55-nRST Pin=U4-11
+Added Net: Name=W55-nRST
