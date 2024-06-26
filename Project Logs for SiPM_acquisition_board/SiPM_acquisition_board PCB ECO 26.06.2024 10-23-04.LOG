@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetC75_2 Pin=K1-2
+Removed Pin From Net: NetName=NetC70_2 Pin=K1-7
+Removed Pin From Net: NetName=NetK1_6 Pin=R103-2
+Removed Pin From Net: NetName=NetK1_3 Pin=R105-2
+Removed Pin From Net: NetName=NetK1_3 Pin=U5-9
+Removed Pin From Net: NetName=NetK1_6 Pin=U5-24
+Added Pin To Net: NetName=NetC70_2 Pin=K1-2
+Added Pin To Net: NetName=NetC75_2 Pin=K1-7
+Added Pin To Net: NetName=NetK1_3 Pin=R103-2
+Added Pin To Net: NetName=NetK1_6 Pin=R105-2
+Added Pin To Net: NetName=NetK1_6 Pin=U5-9
+Added Pin To Net: NetName=NetK1_3 Pin=U5-24
+Added Member To Class: ClassName=U_MCU Member=Component S1 B3S-1000
+Added Member To Class: ClassName=U_MCU Member=Component S3 B3S-1000

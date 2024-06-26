@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=S1 NewDesignator=S2
+Change Component Designator: OldDesignator=S2 NewDesignator=S3
+Change Component Designator: OldDesignator=S3 NewDesignator=S1
+Change Class Name : Old Net Name=U_Amplifier1 New Net Name=U_Amplifier3
+Change Class Name : Old Net Name=U_Amplifier3 New Net Name=U_Amplifier1
+Change Class Name : Old Net Name=U_Comparator1 New Net Name=U_Comparator3
+Change Class Name : Old Net Name=U_Comparator3 New Net Name=U_Comparator1
+Change Class Name : Old Net Name=U_Sensor_Frontend1 New Net Name=U_Sensor_Frontend3
+Change Class Name : Old Net Name=U_Sensor_Frontend3 New Net Name=U_Sensor_Frontend1

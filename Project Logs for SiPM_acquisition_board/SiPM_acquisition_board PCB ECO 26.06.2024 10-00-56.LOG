@@ -1,0 +1,42 @@
+Change Component Footprint: Designator=C70 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C75 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C80 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C85 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C88 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C91 Old Footprint=sm_cap_0402 New Footprint=sm_cap_0603
+Change component parameters: Designator = "C70" ("C64"); Footprint = "sm_cap_0402"; UniqueID = "\ZMRCRDPT\QOIEFPSP" ("\ZMRCRDPT\QOIEFPSP")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C75" ("C64"); Footprint = "sm_cap_0402"; UniqueID = "\KGQZCPDB\QOIEFPSP" ("\KGQZCPDB\QOIEFPSP")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C80" ("C64"); Footprint = "sm_cap_0402"; UniqueID = "\ESSCSQCL\QOIEFPSP" ("\ESSCSQCL\QOIEFPSP")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C85" ("C69"); Footprint = "sm_cap_0402"; UniqueID = "\JTMSFODM\EJWXPARJ" ("\JTMSFODM\EJWXPARJ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C88" ("C69"); Footprint = "sm_cap_0402"; UniqueID = "\XEKWNMEM\EJWXPARJ" ("\XEKWNMEM\EJWXPARJ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C91" ("C69"); Footprint = "sm_cap_0402"; UniqueID = "\MJLEUGAH\EJWXPARJ" ("\MJLEUGAH\EJWXPARJ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/KEMET/C0603X109B5GACTU?qs=AQlKX63v8Rs4glLobqd%2FJw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603X109B5GACTU"; VariantName = "[No Variations]"

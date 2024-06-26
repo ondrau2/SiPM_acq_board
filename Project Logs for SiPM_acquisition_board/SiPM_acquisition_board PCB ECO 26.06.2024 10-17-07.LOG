@@ -1,0 +1,5 @@
+Added Member To Class: ClassName=U_MCU Member=Component S1 B3S-1000
+Added Member To Class: ClassName=U_MCU Member=Component S3 B3S-1000
+Added Member To Class: ClassName=Amplifier Member=U_Amplifier3 (Amplifier.SchDoc)
+Added Member To Class: ClassName=Comparator Member=U_Comparator3 (Comparator.SchDoc)
+Added Member To Class: ClassName=Sensor_Frontend Member=U_Sensor_Frontend1 (Sensor_Frontend.SchDoc)
