@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DAC_nLDAC Pin=U5-44
+Removed Pin From Net: NetName=DAC_RDY Pin=U5-45
+Added Pin To Net: NetName=DAC_RDY Pin=U5-40
+Added Pin To Net: NetName=DAC_nLDAC Pin=U5-41

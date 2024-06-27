@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GPB-1 Pin=R54-1
+Added Pin To Net: NetName=GPB-1 Pin=R53-1
+Added Pin To Net: NetName=GPB-1 Pin=U5-23
+Added Pin To Net: NetName=GPLED-1 Pin=U5-44
+Added Pin To Net: NetName=GPLED-2 Pin=U5-45
+Added Pin To Net: NetName=GPLED-3 Pin=U5-46
+Added Pin To Net: NetName=GPB-2 Pin=R54-1
+Added Pin To Net: NetName=GPB-2 Pin=U5-22
+Added Net: Name=GPB-2

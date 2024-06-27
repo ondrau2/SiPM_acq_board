@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=Out_Int_Comp2 Pin=R8-2
+Removed Pin From Net: NetName=Out_Ext_Comp2 Pin=R9-1
+Removed Pin From Net: NetName=Out_Int_Comp2 Pin=U5-25
+Added Pin To Net: NetName=Out_Ext_Comp3 Pin=R9-1
+Added Pin To Net: NetName=Out_Int_Comp3 Pin=R8-2
+Added Pin To Net: NetName=Out_Int_Comp3 Pin=U5-25
+Added Net: Name=Out_Int_Comp3
+Added Member To Class: ClassName=U_Comparator1 Member=Component C92 (C70) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator1 Member=Component R106 (R82) D.N.P.
+Added Member To Class: ClassName=U_Comparator1 Member=Component R107 (R83) 0R/1%
