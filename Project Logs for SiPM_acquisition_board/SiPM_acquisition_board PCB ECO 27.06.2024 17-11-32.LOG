@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=GND-A Pin=J6-3
+Removed Pin From Net: NetName=GND-A Pin=J7-3
+Removed Pin From Net: NetName=GND-A Pin=J8-3
+Change Component Footprint: Designator=J6 Old Footprint=S3BXHA1LFSN New Footprint=RJ45_1_PORT_NOLED
+Change Component Footprint: Designator=J7 Old Footprint=S3BXHA1LFSN New Footprint=RJ45_1_PORT_NOLED
+Change Component Footprint: Designator=J8 Old Footprint=S3BXHA1LFSN New Footprint=RJ45_1_PORT_NOLED
+Change Component Comment : Designator=J6 Old Comment=S3B-XH-A-1 New Comment=1-port, RJ-45, No LED
+Change Component Comment : Designator=J7 Old Comment=S3B-XH-A-1 New Comment=1-port, RJ-45, No LED
+Change Component Comment : Designator=J8 Old Comment=S3B-XH-A-1 New Comment=1-port, RJ-45, No LED
+Change component parameters: Designator = "J6" ("J6"); Footprint = "S3BXHA1LFSN"; UniqueID = "\RKMRTGJI\JOXQIPIQ" ("\RKMRTGJI\JOXQIPIQ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Amphenol-Commercial-Products/RJSBE5380C1?qs=LiXFYW4OVo%2FdVDofBGy8HQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "RJ-45"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RJSBE5380C1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J7" ("J6"); Footprint = "S3BXHA1LFSN"; UniqueID = "\EGGHKALA\JOXQIPIQ" ("\EGGHKALA\JOXQIPIQ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Amphenol-Commercial-Products/RJSBE5380C1?qs=LiXFYW4OVo%2FdVDofBGy8HQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "RJ-45"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RJSBE5380C1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J8" ("J6"); Footprint = "S3BXHA1LFSN"; UniqueID = "\IDKYXAFD\JOXQIPIQ" ("\IDKYXAFD\JOXQIPIQ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Amphenol-Commercial-Products/RJSBE5380C1?qs=LiXFYW4OVo%2FdVDofBGy8HQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "RJ-45"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RJSBE5380C1"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND-A Pin=J6-SHIELD
+Added Pin To Net: NetName=GND-A Pin=J6-SHIELD
+Added Pin To Net: NetName=GND-A Pin=J7-SHIELD
+Added Pin To Net: NetName=GND-A Pin=J7-SHIELD
+Added Pin To Net: NetName=GND-A Pin=J8-SHIELD
+Added Pin To Net: NetName=GND-A Pin=J8-SHIELD
