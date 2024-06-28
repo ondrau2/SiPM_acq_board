@@ -1,0 +1,4 @@
+Removed Member From Class: ClassName=Sensor_Frontend Member=U_DAC1
+Added Member To Class: ClassName=Sensor_Frontend Member=U_Sensor_Frontend3 (Sensor_Frontend.SchDoc)
+Added Room: Name=U_DAC1
+Added Room: Name=U_DAC2

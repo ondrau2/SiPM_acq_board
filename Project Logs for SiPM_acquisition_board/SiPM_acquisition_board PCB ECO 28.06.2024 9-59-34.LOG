@@ -1,0 +1,81 @@
+Change Component Footprint: Designator=C61 Old Footprint=sm_cap_0805 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C62 Old Footprint=sm_cap_0805 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C64 Old Footprint=sm_cap_0805 New Footprint=sm_cap_0603
+Change Component Footprint: Designator=C65 Old Footprint=sm_cap_0805 New Footprint=sm_cap_0603
+Change Component Comment : Designator=C61 Old Comment=1uF/100V/X5R New Comment=10uF/6.3V/X5R
+Change Component Comment : Designator=C62 Old Comment=1uF/100V/X5R New Comment=100nF/50V/X7R
+Change Component Comment : Designator=C64 Old Comment=1uF/100V/X5R New Comment=100nF/50V/X7R
+Change Component Comment : Designator=C65 Old Comment=1uF/100V/X5R New Comment=100nF/50V/X7R
+Change Component Comment : Designator=R75 Old Comment=2k/1% New Comment=0R/1%
+Change Component Comment : Designator=R72 Old Comment=2k/1% New Comment=10k/1%
+Change Component Comment : Designator=R74 Old Comment=D.N.P. New Comment=0R/1%
+Change Component Comment : Designator=R77 Old Comment=D.N.P. New Comment=0R/1%
+Change Component Comment : Designator=R14 Old Comment=D.N.P. New Comment=10k/1%
+Change Component Comment : Designator=C63 Old Comment=D.N.P. New Comment=100nF/50V/X7R
+Change Component Comment : Designator=C66 Old Comment=D.N.P. New Comment=100nF/50V/X7R
+Change component parameters: Designator = "C61" ("C55"); Footprint = "sm_cap_0805"; UniqueID = "\ERYZBTPZ\WCTQLXZC" ("\ERYZBTPZ\WCTQLXZC")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/productdetail/tdk/c1608x5r0j106m080ab?qs=sGAEpiMZZMvsSlwiRhF8qsDt8B2LujiHbasHDgpfkEU%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C1608X5R0J106M080AB"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C62" ("C56"); Footprint = "sm_cap_0805"; UniqueID = "\ERYZBTPZ\FRNUMTXZ" ("\ERYZBTPZ\FRNUMTXZ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C63" ("C57"); Footprint = "sm_cap_0603"; UniqueID = "\ERYZBTPZ\FSRGHAYC" ("\ERYZBTPZ\FSRGHAYC")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C64" ("C58"); Footprint = "sm_cap_0805"; UniqueID = "\ERYZBTPZ\ZXJUKWUT" ("\ERYZBTPZ\ZXJUKWUT")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C65" ("C59"); Footprint = "sm_cap_0805"; UniqueID = "\ERYZBTPZ\LXUORIGC" ("\ERYZBTPZ\LXUORIGC")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C66" ("C60"); Footprint = "sm_cap_0603"; UniqueID = "\ERYZBTPZ\CEIDHKZD" ("\ERYZBTPZ\CEIDHKZD")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R14" ("R14"); Footprint = "sm_res_0603"; UniqueID = "\GIYFOBTE" ("\GIYFOBTE")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R72" ("R84"); Footprint = "sm_res_0603"; UniqueID = "\MFMRSAKX" ("\MFMRSAKX")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIAhzU1Tw%252BHVakiDuQ4Zki0U%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R74" ("R86"); Footprint = "sm_res_0603"; UniqueID = "\AVLDPZWS" ("\AVLDPZWS")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-070RL?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJbOjDgY8S7mQ%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0603FR-070RL"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R75" ("R87"); Footprint = "sm_res_0603"; UniqueID = "\UOHYKLLG" ("\UOHYKLLG")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-070RL?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJbOjDgY8S7mQ%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0603FR-070RL"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R77" ("R89"); Footprint = "sm_res_0603"; UniqueID = "\NMEDYNOU\CGQVRGSZ" ("\NMEDYNOU\CGQVRGSZ")
+Change component parameters (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/RC0603FR-070RL?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJbOjDgY8S7mQ%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0603FR-070RL"; VariantName = "[No Variations]"
