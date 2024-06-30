@@ -1,0 +1,665 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">30.06.2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:39:29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc" class="file"><acronym title="C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc">C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">87</td></tr>
+</table>
+</td>
+</table><a name="IDH0I3RAL02KSIP32YZBJVCR1DYG0GYSFAXLGHOJPN2JQINEOGBKVD"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG5T1RYTBBWZDBBZKYB311O21LBEYWVVFEVTTKN5PM44HVCKLBHK">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">40</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDP4OLPHZ1GFEZCRGA3KRPZUG3TEN3TQR3VOMI3CBMBX3I1QWQKD3B">Clearance Constraint (Gap=0.8mm) (InAnyDifferentialPair and (not IsVia)),(InPolygon and (OnLayer('Top Layer') OR OnLayer('Bottom Layer')))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVODKCTGQEWBYPWFXBIGHRTKXVEYBRT35JLXFI5KJW1B0YUJX55UD">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID423QU3CPRNIHM5G5A4SNQYF4ANOWR0NXEGGTXULHE0RDBXTZPYGF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3XTAMTTYNYELDE11XO2X2EUPKXXQWEEY2EEQGMVYNNGJIQDJRXO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDRFXLBG04203DWQ2YFR52M1MSMAOSCXPAJXUDMP5G5XTCD0F4LTL">Width Constraint (Min=0.2mm) (Max=1mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4BQQOIGW5DSJ0E31TAADXYCIHW2BDF4HMBXUKH4REIUCH2G2XRL">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCBJJHOGBVWPJEB0E3OK4E0DURHBUGMJJCVUZKXHHJBJL5YWXCYGD">Hole Size Constraint (Min=0.025mm) (Max=5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJBJRKWIT2X1IENZS30DWN5XNZIDICQ5Y5FZXH2C3V5MNPLSZ3VFK">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIO4BO25H0NJNPQ4WDIDBYEDAHJSMMXC5QZTFUCJC1GEPO0WAPNTP">Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)</a></td>
+<td class="column2">23</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHOC2JB3VNM3IHHPEWIXQVSSJ3D5C5M03U1JRKUHS0BIFWVFTF13">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID11PCBUZIT3EHODHEI5AVK3WQEK0P2KB2VBS0NRDOSKPS5ZR5HFPD">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEH55ZR4LHKLGNMH1DJEFVB31VO2ZMQXY4EDRSCFT53BUMEAB1SXM">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOZ5BLOYEXVJ4M0MHATMPRCZPBCEHJ0A2XY5UBOGVI0ZCSZCH14YI">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSLVHXURGVLZOMXORFFRQ1LJE5IZGY2RXRZP0GMPZYXJUA0IO2WEM">Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1HFLU4S3DKDLBGW1EVCOIVTSEBXHECSSIEN4THPHIZ1A1HNK11WM">Room U_Comparator2 (Bounding Region = (108mm, 186mm, 119.7mm, 197.4mm) (InComponentClass('U_Comparator2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX3ELAOEF2F32ECLAXH5F3YWL2JNWND4A3SSMWKBBNPMLJVSW1PKH">Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3LZKTXAPMCW2J54HRH2FMWMJWNE451NJ3L43ZGHLQELWVNXGW2WF">Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCJ1QIW40QWLDB0LOIXFSUWVIFPI2FBDTJKJK54F52XZDQJPU3TEC">Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDH4VT1JH2P4XHIFQFMRITUXYSOLNQI0GQIWHPO0O5OOBSO004LMQC">Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBBJYJFEKPIFKEJPNKSHD5VKUCFQS11WQH4VLO1O4AMURTAEDVJWH">Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZTAAIQXG3E2FJK223LPGBG434HMIAM2RLK4C4OCH4CVE4LYASXCO">Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDULCDX3E0BV3ANDXIQKG210KYIOBQ0ZZJI55IFPJV4G2FCX4MNU1J">Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEKMSWSSNGSUNMVBUPELHGOKBZGP02MC4IB3GWWDKRDGDJH04L25H">Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDPPX1HNAMMOMJZPMAFSQNKB2VOZUIWDVSOYABRGIKCSGOLA0DR0J">Room U_Comparator3 (Bounding Region = (108mm, 171mm, 119.7mm, 182.4mm) (InComponentClass('U_Comparator3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWR0IUDK4MVUFDNUMJMBLI31AQMUHUEYIV43RDXGUOX1PLIHPHPPP">Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRIYIL0A35NIXPH5DPOB3P4FGINJROV5KNF2B1ZB5YI3F1233HUAD">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">87</td>
+</tr>
+</table><br><a name="IDG5T1RYTBBWZDBBZKYB311O21LBEYWVVFEVTTKN5PM44HVCKLBHK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7359.081mil|Location2.X=7365.33mil|Location1.Y=9394.793mil|Location2.Y=9401.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7359.081mil|Location2.X=7365.33mil|Location1.Y=9394.793mil|Location2.Y=9401.042mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.2mm) Between Pad FID1-1(140mm,127mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1689.789mil|Location2.X=1696.038mil|Location1.Y=4552.273mil|Location2.Y=4558.522mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1689.789mil|Location2.X=1696.038mil|Location1.Y=4552.273mil|Location2.Y=4558.522mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.2mm) Between Pad FID2-1(-4mm,4mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6729.159mil|Location2.X=6735.408mil|Location1.Y=4512.903mil|Location2.Y=4519.152mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6729.159mil|Location2.X=6735.408mil|Location1.Y=4512.903mil|Location2.Y=4519.152mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.2mm) Between Pad FID3-1(124mm,3mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6043.667mil|Location2.X=6052.791mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6043.667mil|Location2.X=6052.791mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-1(106.75mm,116.95mm) on Top Layer And Pad U2-13(108mm,118mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6082.053mil|Location2.X=6091.177mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6082.053mil|Location2.X=6091.177mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-10(107.75mm,119.05mm) on Top Layer And Pad U2-13(108mm,118mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6062.368mil|Location2.X=6071.492mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6062.368mil|Location2.X=6071.492mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-11(107.25mm,119.05mm) on Top Layer And Pad U2-13(108mm,118mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6043.667mil|Location2.X=6052.791mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6043.667mil|Location2.X=6052.791mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-12(106.75mm,119.05mm) on Top Layer And Pad U2-13(108mm,118mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6062.368mil|Location2.X=6071.492mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6062.368mil|Location2.X=6071.492mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-2(107.25mm,116.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6082.053mil|Location2.X=6091.177mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6082.053mil|Location2.X=6091.177mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-3(107.75mm,116.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.423mil|Location2.X=6130.547mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.423mil|Location2.X=6130.547mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-5(108.75mm,116.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6141.108mil|Location2.X=6150.232mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6141.108mil|Location2.X=6150.232mil|Location1.Y=8986.087mil|Location2.Y=8995.211mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-6(109.25mm,116.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6141.108mil|Location2.X=6150.232mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6141.108mil|Location2.X=6150.232mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-7(109.25mm,119.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.423mil|Location2.X=6130.547mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6121.423mil|Location2.X=6130.547mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-8(108.75mm,119.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6101.738mil|Location2.X=6110.862mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6101.738mil|Location2.X=6110.862mil|Location1.Y=9036.284mil|Location2.Y=9045.408mil|Absolute=True">Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad U2-13(108mm,118mm) on Top Layer And Pad U2-9(108.25mm,119.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,18.55mm) on Top Layer And Via (100.35mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,18.55mm) on Top Layer And Via (101.05mm,18.59mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,19.95mm) on Top Layer And Via (100.35mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,19.95mm) on Top Layer And Via (100.35mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,19.95mm) on Top Layer And Via (101.05mm,19.99mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5796.62mil|Location2.X=5805.744mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,21.35mm) on Top Layer And Via (100.35mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5815.812mil|Location2.X=5824.936mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(100.35mm,21.35mm) on Top Layer And Via (101.05mm,21.39mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,18.55mm) on Top Layer And Via (101.05mm,18.59mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,18.55mm) on Top Layer And Via (101.75mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,18.55mm) on Top Layer And Via (102.45mm,18.59mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,19.95mm) on Top Layer And Via (101.05mm,19.99mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,19.95mm) on Top Layer And Via (101.75mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,19.95mm) on Top Layer And Via (101.75mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,19.95mm) on Top Layer And Via (102.45mm,19.99mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5832.545mil|Location2.X=5841.669mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,21.35mm) on Top Layer And Via (101.05mm,21.39mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5851.738mil|Location2.X=5860.862mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,21.35mm) on Top Layer And Via (101.75mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5870.931mil|Location2.X=5880.055mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(101.75mm,21.35mm) on Top Layer And Via (102.45mm,21.39mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5097.406mil|Location2.Y=5106.53mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,18.55mm) on Top Layer And Via (102.45mm,18.59mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5115.025mil|Location2.Y=5124.149mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,18.55mm) on Top Layer And Via (103.15mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5152.525mil|Location2.Y=5161.649mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,19.95mm) on Top Layer And Via (102.45mm,19.99mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5131.757mil|Location2.Y=5140.881mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,19.95mm) on Top Layer And Via (103.15mm,19.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5170.143mil|Location2.Y=5179.267mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,19.95mm) on Top Layer And Via (103.15mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5887.663mil|Location2.X=5896.787mil|Location1.Y=5207.643mil|Location2.Y=5216.767mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,21.35mm) on Top Layer And Via (102.45mm,21.39mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5906.856mil|Location2.X=5915.98mil|Location1.Y=5186.875mil|Location2.Y=5195.999mil|Absolute=True">Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad U6-41(103.15mm,21.35mm) on Top Layer And Via (103.15mm,20.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6363.921mil|Location2.X=6373.045mil|Location1.Y=9070.614mil|Location2.Y=9079.738mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6363.921mil|Location2.X=6373.045mil|Location1.Y=9070.614mil|Location2.Y=9079.738mil|Absolute=True">Clearance Constraint: (0.18mm &lt; 0.2mm) Between Track (114.25mm,119.75mm)(115mm,119mm) on Top Layer And Via (115mm,119.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6373.391mil|Location2.X=6382.515mil|Location1.Y=9067.182mil|Location2.Y=9076.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6373.391mil|Location2.X=6382.515mil|Location1.Y=9067.182mil|Location2.Y=9076.306mil|Absolute=True">Clearance Constraint: (0.155mm &lt; 0.2mm) Between Track (114mm,119.245mm)(115.845mm,119.245mm) on Bottom Layer And Via (115mm,119.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID423QU3CPRNIHM5G5A4SNQYF4ANOWR0NXEGGTXULHE0RDBXTZPYGF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5779.465mil|Location2.X=5878.016mil|Location1.Y=5133.795mil|Location2.Y=5177.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5779.465mil|Location2.X=5878.016mil|Location1.Y=5133.795mil|Location2.Y=5177.228mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U6-41(100.35mm,19.95mm) on Top Layer [Unplated] And Pad U6-41(101.75mm,19.95mm) on Top Layer [Unplated] </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDIO4BO25H0NJNPQ4WDIDBYEDAHJSMMXC5QZTFUCJC1GEPO0WAPNTP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=6965.91mil|Location2.Y=6969.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=6965.91mil|Location2.Y=6969.129mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U11-1(65.8mm,66.45mm) on Top Layer And Pad U11-2(65.8mm,65.5mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=6928.509mil|Location2.Y=6931.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=6928.509mil|Location2.Y=6931.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U11-2(65.8mm,65.5mm) on Top Layer And Pad U11-3(65.8mm,64.55mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=7556.462mil|Location2.Y=7559.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=7556.462mil|Location2.Y=7559.68mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U12-1(65.8mm,81.45mm) on Top Layer And Pad U12-2(65.8mm,80.5mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=7519.06mil|Location2.Y=7522.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=7519.06mil|Location2.Y=7522.278mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U12-2(65.8mm,80.5mm) on Top Layer And Pad U12-3(65.8mm,79.55mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=8147.013mil|Location2.Y=8150.231mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=8147.013mil|Location2.Y=8150.231mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U13-1(65.8mm,96.45mm) on Top Layer And Pad U13-2(65.8mm,95.5mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=8109.611mil|Location2.Y=8112.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4409.746mil|Location2.X=4412.964mil|Location1.Y=8109.611mil|Location2.Y=8112.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.05mm) Between Pad U13-2(65.8mm,95.5mm) on Top Layer And Pad U13-3(65.8mm,94.55mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=5972.8mil|Location2.Y=5976.019mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=5972.8mil|Location2.Y=5976.019mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-1(68.15mm,40.5mm) on Top Layer And Pad U14-2(68.15mm,41mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=5972.8mil|Location2.Y=5976.019mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=5972.8mil|Location2.Y=5976.019mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-10(63.85mm,40.5mm) on Top Layer And Pad U14-9(63.85mm,41mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=5992.485mil|Location2.Y=5995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=5992.485mil|Location2.Y=5995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-2(68.15mm,41mm) on Top Layer And Pad U14-3(68.15mm,41.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6012.17mil|Location2.Y=6015.389mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6012.17mil|Location2.Y=6015.389mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-3(68.15mm,41.5mm) on Top Layer And Pad U14-4(68.15mm,42mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6031.855mil|Location2.Y=6035.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6031.855mil|Location2.Y=6035.074mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-4(68.15mm,42mm) on Top Layer And Pad U14-5(68.15mm,42.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6031.855mil|Location2.Y=6035.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6031.855mil|Location2.Y=6035.074mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-6(63.85mm,42.5mm) on Top Layer And Pad U14-7(63.85mm,42mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6012.17mil|Location2.Y=6015.389mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6012.17mil|Location2.Y=6015.389mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-7(63.85mm,42mm) on Top Layer And Pad U14-8(63.85mm,41.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=5992.485mil|Location2.Y=5995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=5992.485mil|Location2.Y=5995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U14-8(63.85mm,41.5mm) on Top Layer And Pad U14-9(63.85mm,41mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6445.241mil|Location2.Y=6448.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6445.241mil|Location2.Y=6448.459mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-1(68.15mm,52.5mm) on Top Layer And Pad U7-2(68.15mm,53mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6445.241mil|Location2.Y=6448.459mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6445.241mil|Location2.Y=6448.459mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-10(63.85mm,52.5mm) on Top Layer And Pad U7-9(63.85mm,53mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6464.926mil|Location2.Y=6468.145mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6464.926mil|Location2.Y=6468.145mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-2(68.15mm,53mm) on Top Layer And Pad U7-3(68.15mm,53.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6484.611mil|Location2.Y=6487.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6484.611mil|Location2.Y=6487.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-3(68.15mm,53.5mm) on Top Layer And Pad U7-4(68.15mm,54mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6504.296mil|Location2.Y=6507.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.297mil|Location2.X=4507.515mil|Location1.Y=6504.296mil|Location2.Y=6507.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-4(68.15mm,54mm) on Top Layer And Pad U7-5(68.15mm,54.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6504.296mil|Location2.Y=6507.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6504.296mil|Location2.Y=6507.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-6(63.85mm,54.5mm) on Top Layer And Pad U7-7(63.85mm,54mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6484.611mil|Location2.Y=6487.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6484.611mil|Location2.Y=6487.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-7(63.85mm,54mm) on Top Layer And Pad U7-8(63.85mm,53.5mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6464.926mil|Location2.Y=6468.145mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4335.005mil|Location2.X=4338.224mil|Location1.Y=6464.926mil|Location2.Y=6468.145mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.05mm) Between Pad U7-8(63.85mm,53.5mm) on Top Layer And Pad U7-9(63.85mm,53mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6050.588mil|Location2.X=6053.806mil|Location1.Y=7281.855mil|Location2.Y=7285.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6050.588mil|Location2.X=6053.806mil|Location1.Y=7281.855mil|Location2.Y=7285.074mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.048mm &lt; 0.05mm) Between Pad Y1-4(105.9mm,74mm) on Top Layer And Via (106.9mm,74mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.048mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDHOC2JB3VNM3IHHPEWIXQVSSJ3D5C5M03U1JRKUHS0BIFWVFTF13"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6122.454mil|Location2.X=6127.641mil|Location1.Y=6471.257mil|Location2.Y=6476.444mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6122.454mil|Location2.X=6127.641mil|Location1.Y=6471.257mil|Location2.Y=6476.444mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.078mm &lt; 0.1mm) Between Pad U5-47(108.431mm,53.411mm) on Top Layer And Text "C41" (109.325mm,52.028mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6133.601mil|Location2.X=6137.226mil|Location1.Y=6454.983mil|Location2.Y=6458.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6133.601mil|Location2.X=6137.226mil|Location1.Y=6454.983mil|Location2.Y=6458.608mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad U5-48(108.931mm,53.411mm) on Top Layer And Text "C41" (109.325mm,52.028mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID11PCBUZIT3EHODHEI5AVK3WQEK0P2KB2VBS0NRDOSKPS5ZR5HFPD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4968.336mil|Location2.X=4973.523mil|Location1.Y=5177.084mil|Location2.Y=5182.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4968.336mil|Location2.X=4973.523mil|Location1.Y=5177.084mil|Location2.Y=5182.271mil|Absolute=True">Silk To Silk Clearance Constraint: (0.052mm &lt; 0.1mm) Between Text "5" (77.992mm,20.436mm) on Top Overlay And Track (77.23mm,20.69mm)(82.31mm,20.69mm) on Top Overlay Silk Text to Silk Clearance [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5043.344mil|Location2.X=5048.531mil|Location1.Y=5177.084mil|Location2.Y=5182.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5043.344mil|Location2.X=5048.531mil|Location1.Y=5177.084mil|Location2.Y=5182.271mil|Absolute=True">Silk To Silk Clearance Constraint: (0.052mm &lt; 0.1mm) Between Text "6" (80.532mm,20.436mm) on Top Overlay And Track (77.23mm,20.69mm)(82.31mm,20.69mm) on Top Overlay Silk Text to Silk Clearance [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.18mil|Location2.X=6810.367mil|Location1.Y=9249.454mil|Location2.Y=9254.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.18mil|Location2.X=6810.367mil|Location1.Y=9249.454mil|Location2.Y=9254.641mil|Absolute=True">Silk To Silk Clearance Constraint: (0.066mm &lt; 0.1mm) Between Text "FH1" (125.825mm,122.709mm) on Top Overlay And Track (126.05mm,123.992mm)(126.075mm,123.492mm) on Top Overlay Silk Text to Silk Clearance [0.066mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.18mil|Location2.X=6810.367mil|Location1.Y=9249.454mil|Location2.Y=9254.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.18mil|Location2.X=6810.367mil|Location1.Y=9249.454mil|Location2.Y=9254.641mil|Absolute=True">Silk To Silk Clearance Constraint: (0.066mm &lt; 0.1mm) Between Text "FH1" (125.825mm,122.709mm) on Top Overlay And Track (126.05mm,123.992mm)(128.775mm,123.992mm) on Top Overlay Silk Text to Silk Clearance [0.066mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.178mil|Location2.X=6810.365mil|Location1.Y=9198.556mil|Location2.Y=9203.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6805.178mil|Location2.X=6810.365mil|Location1.Y=9198.556mil|Location2.Y=9203.743mil|Absolute=True">Silk To Silk Clearance Constraint: (0.065mm &lt; 0.1mm) Between Text "FH1" (125.825mm,122.709mm) on Top Overlay And Track (126.05mm,99.967mm)(126.05mm,123.992mm) on Top Overlay Silk Text to Silk Clearance [0.065mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDOZ5BLOYEXVJ4M0MHATMPRCZPBCEHJ0A2XY5UBOGVI0ZCSZCH14YI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2080.62mil|Location2.X=2112.973mil|Location1.Y=8884.117mil|Location2.Y=8905.052mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2080.62mil|Location2.X=2112.973mil|Location1.Y=8884.117mil|Location2.Y=8905.052mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.155mm &lt; 0.5mm) Between Board Edge And Text "PH2" (6.234mm,114.075mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6334.474mil|Location2.Y=6348.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6334.474mil|Location2.Y=6348.597mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,50.075mm)(158.184mm,50.075mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6584.474mil|Location2.Y=6598.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6584.474mil|Location2.Y=6598.597mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,56.425mm)(158.184mm,56.425mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6865.97mil|Location2.Y=6880.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=6865.97mil|Location2.Y=6880.093mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,63.575mm)(158.184mm,63.575mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7115.97mil|Location2.Y=7130.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7115.97mil|Location2.Y=7130.093mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,69.925mm)(158.184mm,69.925mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7358.096mil|Location2.Y=7372.219mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7358.096mil|Location2.Y=7372.219mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,76.075mm)(158.184mm,76.075mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7608.096mil|Location2.Y=7622.219mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7951.448mil|Location2.X=7999.401mil|Location1.Y=7608.096mil|Location2.Y=7622.219mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (150.945mm,82.425mm)(158.184mm,82.425mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=6459.474mil|Location2.Y=6473.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=6459.474mil|Location2.Y=6473.597mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (158.184mm,50.075mm)(158.184mm,56.425mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=6990.97mil|Location2.Y=7005.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=6990.97mil|Location2.Y=7005.093mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (158.184mm,63.575mm)(158.184mm,69.925mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=7483.096mil|Location2.Y=7497.219mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8071.049mil|Location2.X=8119.002mil|Location1.Y=7483.096mil|Location2.Y=7497.219mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (158.184mm,76.075mm)(158.184mm,82.425mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.29mil|Location2.X=1546.225mil|Location1.Y=8413.351mil|Location2.Y=8445.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.29mil|Location2.X=1546.225mil|Location1.Y=8413.351mil|Location2.Y=8445.704mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,103.255mm)(-6.963mm,103.255mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6109.808mil|Location2.Y=6142.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6109.808mil|Location2.Y=6142.16mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,44.745mm)(-6.963mm,44.745mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6759.808mil|Location2.Y=6792.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6759.808mil|Location2.Y=6792.16mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,61.255mm)(-6.963mm,61.255mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6936.58mil|Location2.Y=6968.932mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=6936.58mil|Location2.Y=6968.932mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,65.745mm)(-6.963mm,65.745mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=7586.58mil|Location2.Y=7618.932mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=7586.58mil|Location2.Y=7618.932mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,82.255mm)(-6.963mm,82.255mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=7763.351mil|Location2.Y=7795.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1525.291mil|Location2.X=1546.226mil|Location1.Y=7763.351mil|Location2.Y=7795.704mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.017mm &lt; 0.5mm) Between Board Edge And Track (-7.92mm,86.745mm)(-6.963mm,86.745mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
