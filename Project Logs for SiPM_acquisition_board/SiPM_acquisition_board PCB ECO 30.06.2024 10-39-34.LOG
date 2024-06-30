@@ -1,0 +1,116 @@
+Removed Member From Class: ClassName=Top Member=R84
+Removed Member From Class: ClassName=Top Member=R85
+Removed Member From Class: ClassName=Top Member=R86
+Removed Member From Class: ClassName=Top Member=R87
+Removed Member From Class: ClassName=U_MCU Member=R88
+Removed Member From Class: ClassName=U_MCU Member=R89
+Removed Member From Class: ClassName=Top Member=R93
+Removed Member From Class: ClassName=Top Member=R94
+Removed Member From Class: ClassName=U_MCU Member=R95
+Removed Member From Class: ClassName=U_MCU Member=R96
+Removed Member From Class: ClassName=HV Member=NetC94_2
+Removed Member From Class: ClassName=HV Member=NetC97_2
+Change Component Designator: OldDesignator=C61 NewDesignator=C55
+Change Component Designator: OldDesignator=C62 NewDesignator=C56
+Change Component Designator: OldDesignator=C63 NewDesignator=C57
+Change Component Designator: OldDesignator=C64 NewDesignator=C58
+Change Component Designator: OldDesignator=C65 NewDesignator=C59
+Change Component Designator: OldDesignator=C66 NewDesignator=C60
+Change Component Designator: OldDesignator=C94 NewDesignator=C61
+Change Component Designator: OldDesignator=C95 NewDesignator=C62
+Change Component Designator: OldDesignator=C96 NewDesignator=C63
+Change Component Designator: OldDesignator=C97 NewDesignator=C64
+Change Component Designator: OldDesignator=C98 NewDesignator=C65
+Change Component Designator: OldDesignator=C99 NewDesignator=C66
+Change Component Designator: OldDesignator=L7 NewDesignator=L6
+Change Component Designator: OldDesignator=R14 NewDesignator=R73
+Change Component Designator: OldDesignator=R64 NewDesignator=R14
+Change Component Designator: OldDesignator=R65 NewDesignator=R64
+Change Component Designator: OldDesignator=R72 NewDesignator=R74
+Change Component Designator: OldDesignator=R73 NewDesignator=R65
+Change Component Designator: OldDesignator=R74 NewDesignator=R72
+Change Component Designator: OldDesignator=R76 NewDesignator=R108
+Change Component Designator: OldDesignator=R77 NewDesignator=R109
+Change Component Designator: OldDesignator=R108 NewDesignator=R112
+Change Component Designator: OldDesignator=R109 NewDesignator=R113
+Change Component Designator: OldDesignator=R110 NewDesignator=R114
+Change Component Designator: OldDesignator=R111 NewDesignator=R76
+Change Component Designator: OldDesignator=R112 NewDesignator=R77
+Change Component Designator: OldDesignator=R113 NewDesignator=R66
+Change Component Designator: OldDesignator=R114 NewDesignator=R67
+Change Component Designator: OldDesignator=R115 NewDesignator=R68
+Change Component Designator: OldDesignator=R116 NewDesignator=R69
+Change Component Designator: OldDesignator=R117 NewDesignator=R70
+Change Component Designator: OldDesignator=R118 NewDesignator=R71
+Change Component Designator: OldDesignator=R119 NewDesignator=R117
+Change Component Designator: OldDesignator=R120 NewDesignator=R118
+Change Component Designator: OldDesignator=R121 NewDesignator=R119
+Change Component Designator: OldDesignator=R122 NewDesignator=R120
+Change Component Designator: OldDesignator=R129 NewDesignator=R131
+Change Component Designator: OldDesignator=R130 NewDesignator=R132
+Change Component Designator: OldDesignator=R131 NewDesignator=R110
+Change Component Designator: OldDesignator=R132 NewDesignator=R111
+Change Component Designator: OldDesignator=R133 NewDesignator=R115
+Change Component Designator: OldDesignator=R134 NewDesignator=R116
+Change Component Designator: OldDesignator=R135 NewDesignator=R121
+Change Component Designator: OldDesignator=R136 NewDesignator=R122
+Change Component Designator: OldDesignator=R137 NewDesignator=R129
+Change Component Designator: OldDesignator=R138 NewDesignator=R130
+Change Component Designator: OldDesignator=U14 NewDesignator=U7
+Change Net Name : Old Net Name=NetC61_2 New Net Name=NetC55_2
+Change Net Name : Old Net Name=NetC66_2 New Net Name=NetC60_2
+Change Net Name : Old Net Name=NetC94_2 New Net Name=NetC61_2
+Change Net Name : Old Net Name=NetC96_2 New Net Name=NetC63_2
+Change Net Name : Old Net Name=NetC97_2 New Net Name=NetC64_2
+Change Net Name : Old Net Name=NetC99_2 New Net Name=NetC66_2
+Change Net Name : Old Net Name=NetR115_2 New Net Name=NetR68_2
+Change Net Name : Old Net Name=NetR116_2 New Net Name=NetR69_2
+Change Net Name : Old Net Name=NetR117_2 New Net Name=NetR70_2
+Change Net Name : Old Net Name=NetR118_2 New Net Name=NetR71_2
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C61 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C62 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C63 D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C64 (C61) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C65 (C62) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C66 (C63) D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component J6 1-port, RJ-45, No LED
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component J7 (J6) 1-port, RJ-45, No LED
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component Q6 (Q1) BSS308PEH6327XTSA1
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component Q7 (Q6) IRLML0030TRPBF
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component Q8 (Q1) BSS308PEH6327XTSA1
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component Q9 (Q6) IRLML0030TRPBF
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component Q10 (Q1) BSS308PEH6327XTSA1
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component Q11 (Q6) IRLML0030TRPBF
+Added Member To Class: ClassName=Top Member=Component R72 (R86) 0R/1%
+Added Member To Class: ClassName=Top Member=Component R73 (R14) 10k/1%
+Added Member To Class: ClassName=Top Member=Component R74 (R84) 10k/1%
+Added Member To Class: ClassName=Top Member=Component R75 (R87) D.N.P.
+Added Member To Class: ClassName=Top Member=Component R76 (R93) D.N.P.
+Added Member To Class: ClassName=Top Member=Component R77 (R94) D.N.P.
+Added Member To Class: ClassName=U_MCU Member=Component R108 (R88) 0R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R109 (R89) 0R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R110 (R95) 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R111 (R96) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R112 (R90) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R113 (R91) 100R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R114 (R92) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R115 (R97) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R116 (R98) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R117 (R90) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R118 (R91) 100R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R119 (R92) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R120 (R72) 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R121 (R97) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R122 (R98) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R123 (R73) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R124 (R74) D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R125 (R90) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R126 (R91) 100R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R127 (R92) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R128 (R72) 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R129 (R97) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R130 (R98) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R131 (R73) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R132 (R74) D.N.P.
+Added Member To Class: ClassName=HV Member=Wire NetC61_2
+Added Member To Class: ClassName=HV Member=Wire NetC64_2

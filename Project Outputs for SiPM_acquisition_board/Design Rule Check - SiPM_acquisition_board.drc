@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\ruzic\OneDrive\Dokumenty\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc
 Date     : 30.06.2024
-Time     : 9:39:29
+Time     : 17:19:32
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
    Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad FID1-1(140mm,127mm) on Top Layer And Region (0 hole(s)) Top Layer 
@@ -98,9 +98,13 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
 Rule Violations :23
 
 Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.1mm) Between Pad R10-2(135.738mm,68.25mm) on Top Layer And Text "R10" (133.688mm,67.925mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.1mm) Between Pad R13-2(51.762mm,87.5mm) on Top Layer And Text "R13" (52.188mm,87.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.1mm) Between Pad R14-2(135.738mm,54.75mm) on Top Layer And Text "R14" (133.688mm,54.425mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.1mm) Between Pad R17-1(135.738mm,56.25mm) on Top Layer And Text "R17" (133.688mm,55.925mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
    Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.1mm) Between Pad U5-47(108.431mm,53.411mm) on Top Layer And Text "C41" (109.325mm,52.028mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad U5-48(108.931mm,53.411mm) on Top Layer And Text "C41" (109.325mm,52.028mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-Rule Violations :2
+Rule Violations :6
 
 Processing Rule : Silk to Silk (Clearance=0.1mm) (All),(All)
    Violation between Silk To Silk Clearance Constraint: (0.052mm < 0.1mm) Between Text "5" (77.992mm,20.436mm) on Top Overlay And Track (77.23mm,20.69mm)(82.31mm,20.69mm) on Top Overlay Silk Text to Silk Clearance [0.052mm]
@@ -114,64 +118,114 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (0.155mm < 0.5mm) Between Board Edge And Text "PH2" (6.234mm,114.075mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,50.075mm)(158.184mm,50.075mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,56.425mm)(158.184mm,56.425mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,63.575mm)(158.184mm,63.575mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,69.925mm)(158.184mm,69.925mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,76.075mm)(158.184mm,76.075mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (150.945mm,82.425mm)(158.184mm,82.425mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (158.184mm,50.075mm)(158.184mm,56.425mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (158.184mm,63.575mm)(158.184mm,69.925mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (158.184mm,76.075mm)(158.184mm,82.425mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,103.255mm)(-6.963mm,103.255mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,44.745mm)(-6.963mm,44.745mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,61.255mm)(-6.963mm,61.255mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,65.745mm)(-6.963mm,65.745mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,82.255mm)(-6.963mm,82.255mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.017mm < 0.5mm) Between Board Edge And Track (-7.92mm,86.745mm)(-6.963mm,86.745mm) on Top Overlay 
-Rule Violations :16
+Rule Violations :6
 
-Processing Rule : Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1'))
-Rule Violations :0
+Processing Rule : Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1'))
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C79-1pF/50V/C0G (67mm,61mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C82-1pF/50V/C0G (67mm,76mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C83-1uF/50V/X5R (67mm,85mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C84-100nF/50V/X7R (67mm,83.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C86-1uF/50V/X5R (67mm,100mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component C87-100nF/50V/X7R (67mm,98.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component R123-10k/1% (10mm,71mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component R131-10k/1% (10mm,50mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1')) And SMT Small Component R136-27R/1% (16mm,50mm) on Top Layer 
+Rule Violations :9
 
 Processing Rule : Room U_Comparator2 (Bounding Region = (108mm, 186mm, 119.7mm, 197.4mm) (InComponentClass('U_Comparator2'))
 Rule Violations :0
 
-Processing Rule : Room U_DAC1 (Bounding Region = (98mm, 145mm, 123mm, 157mm) (InComponentClass('U_DAC1'))
-Rule Violations :0
-
-Processing Rule : Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1'))
-Rule Violations :0
-
-Processing Rule : Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1'))
-Rule Violations :0
-
-Processing Rule : Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias'))
-Rule Violations :0
-
-Processing Rule : Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2'))
-Rule Violations :0
-
-Processing Rule : Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3'))
-Rule Violations :0
-
-Processing Rule : Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2'))
-Rule Violations :0
+Processing Rule : Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1'))
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component C68-100nF/50V/X7R (31.5mm,50mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R113-D.N.P. (67mm,77.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R114-0R/1% (63mm,81.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R120-10k/1% (60.5mm,42.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R123-10k/1% (10mm,71mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R82-10k/1% (10mm,92mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R83-100R/1% (18mm,87mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier1 (Bounding Region = (70mm, 201mm, 84.6mm, 212.9mm) (InComponentClass('U_Amplifier1')) And SMT Small Component R84-10k/1% (16.5mm,87mm) on Top Layer 
+Rule Violations :8
 
 Processing Rule : Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2'))
-Rule Violations :0
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R131-10k/1% (10mm,50mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R135-27R/1% (16mm,51.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R136-27R/1% (16mm,50mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R59-10k/1% (72.5mm,39.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R86-27R/1% (16mm,93.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend2 (Bounding Region = (36mm, 174mm, 66.9mm, 196mm) (InComponentClass('U_Sensor_Frontend2')) And SMT Small Component R87-27R/1% (16mm,92mm) on Top Layer 
+Rule Violations :6
+
+Processing Rule : Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2'))
+   Violation between Room Definition: Between Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2')) And SMT Small Component R85-2k/1% (18mm,99.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2')) And SMT Small Component R97-2k4/1% (31.5mm,76.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_DAC2 (Bounding Region = (97.972mm, 156.921mm, 122.972mm, 168.921mm) (InComponentClass('U_DAC2')) And SMT Small Component R98-50R/1% (30mm,73.75mm) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1'))
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R100-0R/1% (27.25mm,71.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R102-D.N.P. (33mm,73.75mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R113-D.N.P. (67mm,77.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R114-0R/1% (63mm,81.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R92-D.N.P. (27.25mm,52mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R97-2k4/1% (31.5mm,76.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend1 (Bounding Region = (36mm, 195mm, 66.9mm, 217mm) (InComponentClass('U_Sensor_Frontend1')) And SMT Small Component R98-50R/1% (30mm,73.75mm) on Top Layer 
+Rule Violations :7
+
+Processing Rule : Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1'))
+   Violation between Room Definition: Between Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1')) And SMT Small Component C79-1pF/50V/C0G (67mm,61mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1')) And SMT Small Component R120-10k/1% (60.5mm,42.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Comparator1 (Bounding Region = (108mm, 201mm, 119.7mm, 212.4mm) (InComponentClass('U_Comparator1')) And SMT Small Component R123-10k/1% (10mm,71mm) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2'))
+   Violation between Room Definition: Between Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2')) And SMT Small Component R24-D.N.P. (42mm,65.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2')) And SMT Small Component R82-10k/1% (10mm,92mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier2 (Bounding Region = (70mm, 180mm, 84.6mm, 191.9mm) (InComponentClass('U_Amplifier2')) And SMT Small Component R84-10k/1% (16.5mm,87mm) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3'))
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component C61-1uF/100V/X5R (13mm,100.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component C86-1uF/50V/X5R (67mm,100mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R100-0R/1% (27.25mm,71.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R102-D.N.P. (33mm,73.75mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R113-D.N.P. (67mm,77.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R114-0R/1% (63mm,81.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R24-D.N.P. (42mm,65.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Amplifier3 (Bounding Region = (70mm, 159mm, 84.6mm, 170.9mm) (InComponentClass('U_Amplifier3')) And SMT Small Component R82-10k/1% (10mm,92mm) on Top Layer 
+Rule Violations :8
 
 Processing Rule : Room U_Comparator3 (Bounding Region = (108mm, 171mm, 119.7mm, 182.4mm) (InComponentClass('U_Comparator3'))
-Rule Violations :0
+   Violation between Room Definition: Between Room U_Comparator3 (Bounding Region = (108mm, 171mm, 119.7mm, 182.4mm) (InComponentClass('U_Comparator3')) And SMT Small Component C75-1uF/50V/X5R (27.25mm,99.313mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Comparator3 (Bounding Region = (108mm, 171mm, 119.7mm, 182.4mm) (InComponentClass('U_Comparator3')) And SMT Small Component R24-D.N.P. (42mm,65.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Comparator3 (Bounding Region = (108mm, 171mm, 119.7mm, 182.4mm) (InComponentClass('U_Comparator3')) And SMT Small Component R31-33k/1% (96.5mm,88mm) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias'))
+   Violation between Room Definition: Between Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias')) And SMT Small Component R1-10k/1% (-1.5mm,108mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias')) And SMT Small Component R50-100R/1% (127mm,47.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias')) And SMT Small Component R51-27R/1% (134mm,36mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias')) And SMT Small Component R53-220R/1% (124mm,45mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Bias (Bounding Region = (135.5mm, 213mm, 169mm, 240mm) (InComponentClass('U_Bias')) And SMT Small Component R66-220R/1% (43mm,20.5mm) on Top Layer 
+Rule Violations :5
 
 Processing Rule : Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3'))
-Rule Violations :0
+   Violation between Room Definition: Between Component J6-1-port, RJ-45, No LED (-5mm,95mm) on Top Layer And Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3')) 
+   Violation between Room Definition: Between Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3')) And SMT Small Component R127-27R/1% (16mm,72.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3')) And SMT Small Component R59-10k/1% (72.5mm,39.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3')) And SMT Small Component R86-27R/1% (16mm,93.5mm) on Top Layer 
+   Violation between Room Definition: Between Room U_Sensor_Frontend3 (Bounding Region = (36mm, 153mm, 66.9mm, 175mm) (InComponentClass('U_Sensor_Frontend3')) And SMT Small Component R87-27R/1% (16mm,92mm) on Top Layer 
+Rule Violations :5
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 87
+Violations Detected : 141
 Waived Violations : 0
 Time Elapsed        : 00:00:03
