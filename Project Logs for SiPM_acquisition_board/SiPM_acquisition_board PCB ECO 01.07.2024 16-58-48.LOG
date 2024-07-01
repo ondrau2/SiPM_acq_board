@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=DAC1_CTRL.DAC_I2C_SDA Pin=U10-1
+Removed Pin From Net: NetName=DAC1_CTRL.DAC_I2C_SCL Pin=U10-2
+Removed Pin From Net: NetName=GND Pin=U10-4
+Removed Pin From Net: NetName=GND Pin=U10-5
+Removed Pin From Net: NetName=+3V3 Pin=U10-6
+Removed Member From Class: ClassName=Top Member=U10
+Change Component Designator: OldDesignator=C72 NewDesignator=C100
+Added Component: Designator=U15(VSSOP-8)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Texas-Instruments/TMP275AIDGKR?qs=RnzODY3cU8v9LWMH5YW1eQ%3D%3D&utm_id=20109199427&gad_source=1&gclid=CjwKCAjwhIS0BhBqEiwADAUhc0_SASKqB-PLyWTqpads6ibLibyqbTwsBhDKT4CGQp2hdobwB620EhoCWvAQAvD_BwE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "VSSOP-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "TMP275AIDGKR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC74_2 Pin=U10-1
+Added Pin To Net: NetName=GND-A Pin=U10-2
+Added Pin To Net: NetName=NetC74_1 Pin=U10-4
+Added Pin To Net: NetName=+3V3-A Pin=U10-6
+Added Pin To Net: NetName=DAC1_CTRL.DAC_I2C_SDA Pin=U15-1
+Added Pin To Net: NetName=DAC1_CTRL.DAC_I2C_SCL Pin=U15-2
+Added Pin To Net: NetName=GND Pin=U15-4
+Added Pin To Net: NetName=GND Pin=U15-5
+Added Pin To Net: NetName=+3V3 Pin=U15-6
+Added Pin To Net: NetName=+3V3 Pin=U15-7
+Added Pin To Net: NetName=+3V3 Pin=U15-8
+Added Member To Class: ClassName=Top Member=Component U15 (U10) TMP275AIDGKR
