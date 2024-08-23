@@ -1,0 +1,318 @@
+Removed Member From Class: ClassName=U_Amplifier3 Member=C4
+Removed Member From Class: ClassName=U_Comparator2 Member=C4
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=C4
+Removed Member From Class: ClassName=Top Member=C12
+Removed Member From Class: ClassName=U_Amplifier2 Member=C16
+Removed Member From Class: ClassName=U_Comparator1 Member=C16
+Removed Member From Class: ClassName=U_Amplifier2 Member=C18
+Removed Member From Class: ClassName=U_DAC1 Member=C18
+Removed Member From Class: ClassName=U_Amplifier1 Member=C20
+Removed Member From Class: ClassName=U_DAC1 Member=C20
+Removed Member From Class: ClassName=U_Amplifier1 Member=C22
+Removed Member From Class: ClassName=U_DAC1 Member=C22
+Removed Member From Class: ClassName=U_Comparator3 Member=C25
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=C25
+Removed Member From Class: ClassName=U_Comparator1 Member=C26
+Removed Member From Class: ClassName=U_System_power Member=C26
+Removed Member From Class: ClassName=U_Bias Member=C45
+Removed Member From Class: ClassName=U_System_power Member=C45
+Removed Member From Class: ClassName=U_Bias Member=C51
+Removed Member From Class: ClassName=U_System_power Member=C51
+Removed Member From Class: ClassName=U_Bias Member=C54
+Removed Member From Class: ClassName=U_Bias Member=C56
+Removed Member From Class: ClassName=U_Communication Member=C56
+Removed Member From Class: ClassName=U_Comparator3 Member=C56
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=C56
+Removed Member From Class: ClassName=U_Bias Member=C58
+Removed Member From Class: ClassName=U_Communication Member=C58
+Removed Member From Class: ClassName=U_Comparator1 Member=C58
+Removed Member From Class: ClassName=U_System_power Member=C58
+Removed Member From Class: ClassName=U_Communication Member=C62
+Removed Member From Class: ClassName=U_Bias Member=C64
+Removed Member From Class: ClassName=U_Communication Member=C64
+Removed Member From Class: ClassName=U_System_power Member=C64
+Removed Member From Class: ClassName=U_Bias Member=C68
+Removed Member From Class: ClassName=U_MCU Member=C68
+Removed Member From Class: ClassName=U_Bias Member=C70
+Removed Member From Class: ClassName=U_MCU Member=C70
+Removed Member From Class: ClassName=U_Bias Member=C72
+Removed Member From Class: ClassName=U_Communication Member=C72
+Removed Member From Class: ClassName=U_MCU Member=C72
+Removed Member From Class: ClassName=U_Bias Member=C74
+Removed Member From Class: ClassName=U_Communication Member=C74
+Removed Member From Class: ClassName=U_MCU Member=C74
+Removed Member From Class: ClassName=U_Communication Member=C76
+Removed Member From Class: ClassName=U_Comparator2 Member=C76
+Removed Member From Class: ClassName=U_MCU Member=C76
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=C76
+Removed Member From Class: ClassName=U_Bias Member=C78
+Removed Member From Class: ClassName=U_Communication Member=C78
+Removed Member From Class: ClassName=U_MCU Member=C78
+Removed Member From Class: ClassName=U_Bias Member=C80
+Removed Member From Class: ClassName=U_Communication Member=C80
+Removed Member From Class: ClassName=U_MCU Member=C80
+Removed Member From Class: ClassName=U_Bias Member=C82
+Removed Member From Class: ClassName=U_MCU Member=C82
+Removed Member From Class: ClassName=U_ESP_module Member=C84
+Removed Member From Class: ClassName=U_DAC2 Member=C86
+Removed Member From Class: ClassName=U_DAC2 Member=C88
+Removed Member From Class: ClassName=U_Amplifier1 Member=C105
+Removed Member From Class: ClassName=U_DAC2 Member=C105
+Removed Member From Class: ClassName=U_MCU Member=C105
+Removed Member From Class: ClassName=U_Amplifier1 Member=C107
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=C107
+Removed Member From Class: ClassName=U_Amplifier1 Member=C109
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=C109
+Removed Member From Class: ClassName=U_Amplifier3 Member=C111
+Removed Member From Class: ClassName=U_Comparator3 Member=C111
+Removed Member From Class: ClassName=U_Amplifier2 Member=C115
+Removed Member From Class: ClassName=U_Comparator2 Member=C115
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=J5
+Removed Member From Class: ClassName=U_Communication Member=J8
+Removed Member From Class: ClassName=U_System_power Member=J8
+Removed Member From Class: ClassName=U_ESP_module Member=J9
+Removed Member From Class: ClassName=U_MCU Member=LED4
+Removed Member From Class: ClassName=U_System_power Member=LED7
+Removed Member From Class: ClassName=U_Bias Member=LED8
+Removed Member From Class: ClassName=U_System_power Member=R17
+Removed Member From Class: ClassName=U_System_power Member=R20
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R25
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R27
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=R28
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R28
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=R30
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R30
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R34
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=R35
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R35
+Removed Member From Class: ClassName=U_System_power Member=R35
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=R39
+Removed Member From Class: ClassName=U_System_power Member=R39
+Removed Member From Class: ClassName=U_Bias Member=R54
+Removed Member From Class: ClassName=U_Bias Member=R56
+Removed Member From Class: ClassName=U_Bias Member=R58
+Removed Member From Class: ClassName=U_Bias Member=R62
+Removed Member From Class: ClassName=U_Bias Member=R64
+Removed Member From Class: ClassName=U_Communication Member=R64
+Removed Member From Class: ClassName=U_Communication Member=R66
+Removed Member From Class: ClassName=U_Communication Member=R68
+Removed Member From Class: ClassName=U_Communication Member=R74
+Removed Member From Class: ClassName=U_MCU Member=R78
+Removed Member From Class: ClassName=U_MCU Member=R80
+Removed Member From Class: ClassName=U_ESP_module Member=R86
+Removed Member From Class: ClassName=U_ESP_module Member=R89
+Removed Member From Class: ClassName=U_MCU Member=R89
+Removed Member From Class: ClassName=U_DAC2 Member=R91
+Removed Member From Class: ClassName=U_MCU Member=R91
+Removed Member From Class: ClassName=U_DAC2 Member=R95
+Removed Member From Class: ClassName=U_ESP_module Member=R95
+Removed Member From Class: ClassName=U_DAC2 Member=R97
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R97
+Removed Member From Class: ClassName=U_DAC2 Member=R99
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R99
+Removed Member From Class: ClassName=U_DAC2 Member=R101
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R101
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R103
+Removed Member From Class: ClassName=U_Amplifier3 Member=R105
+Removed Member From Class: ClassName=U_Amplifier3 Member=R107
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=R107
+Removed Member From Class: ClassName=U_Amplifier3 Member=R109
+Removed Member From Class: ClassName=U_Amplifier2 Member=R111
+Removed Member From Class: ClassName=U_Amplifier2 Member=R113
+Removed Member From Class: ClassName=U_Amplifier2 Member=R115
+Removed Member From Class: ClassName=U_Amplifier2 Member=R117
+Removed Member From Class: ClassName=U_Amplifier1 Member=R119
+Removed Member From Class: ClassName=U_Amplifier1 Member=R121
+Removed Member From Class: ClassName=U_Amplifier1 Member=R123
+Removed Member From Class: ClassName=U_Comparator3 Member=R125
+Removed Member From Class: ClassName=U_Comparator2 Member=R127
+Removed Member From Class: ClassName=U_Comparator1 Member=R129
+Removed Member From Class: ClassName=U_DAC1 Member=R131
+Removed Member From Class: ClassName=U_DAC1 Member=R133
+Removed Member From Class: ClassName=U_DAC1 Member=R135
+Removed Member From Class: ClassName=Top Member=U3
+Removed Member From Class: ClassName=U_Amplifier1 Member=U3
+Removed Member From Class: ClassName=U_DAC1 Member=U3
+Removed Member From Class: ClassName=U_Comparator3 Member=U4
+Removed Member From Class: ClassName=U_DAC2 Member=U4
+Removed Member From Class: ClassName=U_Amplifier3 Member=U5
+Removed Member From Class: ClassName=U_Comparator2 Member=U5
+Removed Member From Class: ClassName=U_Amplifier2 Member=U7
+Removed Member From Class: ClassName=U_Comparator1 Member=U7
+Removed Member From Class: ClassName=U_Bias Member=U10
+Added Member To Class: ClassName=Top Member=Component C4 100nF/50V/X7R
+Added Member To Class: ClassName=Top Member=Component C5 100nF/50V/X7R
+Added Member To Class: ClassName=U_System_power Member=Component C8 10uF/50V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C9 680pF/50V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C10 1uF/50V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C11 100nF/50V/X7R
+Added Member To Class: ClassName=U_System_power Member=Component C13 22uF/10V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C15 47nF/100V/X7R
+Added Member To Class: ClassName=U_System_power Member=Component C17 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C19 100uF/6V3/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C21 1uF/25V/X5R
+Added Member To Class: ClassName=U_System_power Member=Component C23 D.N.P.
+Added Member To Class: ClassName=U_Bias Member=Component C24 1uF/50V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C25 100nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C27 1uF/50V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C28 100nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C29 15nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C30 100nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C31 1nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C32 100nF/50V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C33 10uF/50V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C34 10uF/50V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C35 100nF/100V/X7R
+Added Member To Class: ClassName=U_Bias Member=Component C36 1uF/100V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C37 1uF/100V/X5R
+Added Member To Class: ClassName=U_Bias Member=Component C39 1uF/100V/X5R
+Added Member To Class: ClassName=U_Communication Member=Component C41 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_Communication Member=Component C42 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_Communication Member=Component C43 100nF/50V/X7R
+Added Member To Class: ClassName=U_Communication Member=Component C44 100nF/50V/X7R
+Added Member To Class: ClassName=U_Communication Member=Component C46 100nF/50V/X7R
+Added Member To Class: ClassName=U_Communication Member=Component C47 10nF/50V/C0G
+Added Member To Class: ClassName=U_Communication Member=Component C48 47pF/50V/C0G
+Added Member To Class: ClassName=U_Communication Member=Component C49 47pF/50V/C0G
+Added Member To Class: ClassName=U_Communication Member=Component C50 10nF/50V/X7R
+Added Member To Class: ClassName=U_MCU Member=Component C52 1uF/50V/X5R
+Added Member To Class: ClassName=U_MCU Member=Component C53 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_MCU Member=Component C55 100nF/50V/X7R
+Added Member To Class: ClassName=U_MCU Member=Component C57 100nF/50V/X7R
+Added Member To Class: ClassName=U_MCU Member=Component C59 12pF/50V/C0G
+Added Member To Class: ClassName=U_MCU Member=Component C60 12pF/50V/C0G
+Added Member To Class: ClassName=U_MCU Member=Component C61 1uF/50V/X5R
+Added Member To Class: ClassName=U_MCU Member=Component C63 1uF/50V/X5R
+Added Member To Class: ClassName=U_MCU Member=Component C65 D.N.P.
+Added Member To Class: ClassName=U_MCU Member=Component C67 100nF/50V/X7R
+Added Member To Class: ClassName=U_ESP_module Member=Component C69 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C71 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_DAC2 Member=Component C73 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C75 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component C77 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component C79 D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C81 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C83 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C85 (C80) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C87 (C82) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C89 (C84) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C90 (C80) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C91 (C81) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C92 (C82) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C93 (C83) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C94 (C84) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator3 Member=Component C95 (C85) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Comparator3 Member=Component C96 (C86) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator3 Member=Component C97 (C87) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator2 Member=Component C98 (C85) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Comparator2 Member=Component C99 (C86) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator2 Member=Component C100 (C87) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator1 Member=Component C101 (C85) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Comparator1 Member=Component C102 (C86) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator1 Member=Component C103 (C87) 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC1 Member=Component C104 (C71) 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_DAC1 Member=Component C106 (C73) 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC1 Member=Component C108 (C75) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C110 (C77) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C112 (C79) D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C113 (C77) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C114 (C78) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Communication Member=Component D9 5V
+Added Member To Class: ClassName=U_System_power Member=Component J4 2-pin, 5.08 mm
+Added Member To Class: ClassName=U_Communication Member=Component J6 12401899E412A
+Added Member To Class: ClassName=U_ESP_module Member=Component J7 Header, 6-pin
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component J10 (J8) 1-port, RJ-45, No LED
+Added Member To Class: ClassName=U_System_power Member=Component LED5 Green
+Added Member To Class: ClassName=U_Bias Member=Component LED6 Green
+Added Member To Class: ClassName=U_MCU Member=Component LED9 Green
+Added Member To Class: ClassName=U_MCU Member=Component LED10 Green
+Added Member To Class: ClassName=Top Member=Component R5 10k/1%
+Added Member To Class: ClassName=Top Member=Component R7 0R/1%
+Added Member To Class: ClassName=Top Member=Component R12 0R/1%
+Added Member To Class: ClassName=Top Member=Component R15 D.N.P.
+Added Member To Class: ClassName=Top Member=Component R19 D.N.P.
+Added Member To Class: ClassName=Top Member=Component R21 10k/1%
+Added Member To Class: ClassName=U_System_power Member=Component R22 3k9/1%
+Added Member To Class: ClassName=U_System_power Member=Component R24 470R/1%
+Added Member To Class: ClassName=U_System_power Member=Component R29 470R/1%
+Added Member To Class: ClassName=U_System_power Member=Component R31 68k/1%
+Added Member To Class: ClassName=U_System_power Member=Component R32 10k/1%
+Added Member To Class: ClassName=U_System_power Member=Component R33 15k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R36 D.N.P.
+Added Member To Class: ClassName=U_Bias Member=Component R37 12k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R38 0R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R40 1k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R42 8k2/1%
+Added Member To Class: ClassName=U_Bias Member=Component R44 750R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R46 82k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R47 12k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R48 270k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R49 2k/1%
+Added Member To Class: ClassName=U_Bias Member=Component R50 10R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R51 0R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R52 100R/1%
+Added Member To Class: ClassName=U_Bias Member=Component R53 0R6/1%
+Added Member To Class: ClassName=U_Communication Member=Component R55 100R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R57 27R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R59 220R/1%
+Added Member To Class: ClassName=U_Communication Member=Component R60 5k1/1%
+Added Member To Class: ClassName=U_Communication Member=Component R61 5k1/1%
+Added Member To Class: ClassName=U_MCU Member=Component R63 0R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R65 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R67 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R69 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R71 10k/1%
+Added Member To Class: ClassName=U_MCU Member=Component R73 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R75 220R/1%
+Added Member To Class: ClassName=U_MCU Member=Component R77 220R/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R79 27R/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R81 10k/1%
+Added Member To Class: ClassName=U_ESP_module Member=Component R82 10k/1%
+Added Member To Class: ClassName=U_DAC2 Member=Component R83 10k/1%
+Added Member To Class: ClassName=U_DAC2 Member=Component R84 10k/1%
+Added Member To Class: ClassName=U_DAC2 Member=Component R85 10k/1%
+Added Member To Class: ClassName=U_DAC2 Member=Component R87 10k/1%
+Added Member To Class: ClassName=U_DAC2 Member=Component R88 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R90 100R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R92 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R93 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R94 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component R96 D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R98 50R/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R100 0R/1%
+Added Member To Class: ClassName=U_Amplifier3 Member=Component R102 D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R104 (R97) 2k4/1%
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R106 (R99) D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R108 (R101) D.N.P.
+Added Member To Class: ClassName=U_Amplifier2 Member=Component R110 (R103) 220R/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R112 (R98) 50R/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R114 (R100) 0R/1%
+Added Member To Class: ClassName=U_Amplifier1 Member=Component R116 (R102) D.N.P.
+Added Member To Class: ClassName=U_Comparator3 Member=Component R118 (R104) D.N.P.
+Added Member To Class: ClassName=U_Comparator2 Member=Component R120 (R104) D.N.P.
+Added Member To Class: ClassName=U_Comparator1 Member=Component R122 (R104) D.N.P.
+Added Member To Class: ClassName=U_DAC1 Member=Component R124 (R83) 10k/1%
+Added Member To Class: ClassName=U_DAC1 Member=Component R126 (R85) 10k/1%
+Added Member To Class: ClassName=U_DAC1 Member=Component R128 (R87) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R130 (R89) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R132 (R91) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R134 (R93) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component R136 (R95) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R138 (R89) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R139 (R90) 100R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R140 (R91) 10k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R141 (R92) 2k/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R142 (R93) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R143 (R94) 27R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R144 (R95) 0R/1%
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component R145 (R96) D.N.P.
+Added Member To Class: ClassName=Top Member=Component U2 TMUX1121DGKR
+Added Member To Class: ClassName=U_Bias Member=Component U6 LM51561-Q1
+Added Member To Class: ClassName=U_DAC2 Member=Component U12 MCP4728-E/UN
+Added Member To Class: ClassName=U_Amplifier3 Member=Component U13 LTC6252
+Added Member To Class: ClassName=U_Amplifier2 Member=Component U14 (U13) LTC6252
+Added Member To Class: ClassName=U_Amplifier1 Member=Component U15 (U13) LTC6252
+Added Member To Class: ClassName=U_Comparator3 Member=Component U16 (U14) LMV7271MFX
+Added Member To Class: ClassName=U_Comparator2 Member=Component U17 (U14) LMV7271MFX
+Added Member To Class: ClassName=U_Comparator1 Member=Component U18 (U14) LMV7271MFX
+Added Member To Class: ClassName=U_DAC1 Member=Component U19 (U12) MCP4728-E/UN
