@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND-A Pin=C110-1
+Removed Pin From Net: NetName=+3V3-A Pin=C110-2
+Removed Pin From Net: NetName=GND-A Pin=C111-1
+Removed Pin From Net: NetName=+3V3-A Pin=C111-2
+Removed Pin From Net: NetName=GND-A Pin=U18-2
+Removed Pin From Net: NetName=+3V3-A Pin=U18-6
+Removed Member From Class: ClassName=U_Communication Member=J9
+Added Pin To Net: NetName=GND Pin=C110-1
+Added Pin To Net: NetName=+3V3 Pin=C110-2
+Added Pin To Net: NetName=GND Pin=C111-1
+Added Pin To Net: NetName=+3V3 Pin=C111-2
+Added Pin To Net: NetName=GND Pin=U18-2
+Added Pin To Net: NetName=+3V3 Pin=U18-6
+Added Member To Class: ClassName=U_Communication Member=Component J5 (J7) 12401899E412A

@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=Top Member=C85
+Removed Member From Class: ClassName=U_System_power Member=J8
+Change Component Designator: OldDesignator=C85 NewDesignator=C113
+Change Component Designator: OldDesignator=J8 NewDesignator=J10
+Change Component Designator: OldDesignator=U14 NewDesignator=U19
+Added Member To Class: ClassName=Top Member=Component C113 (C85) 100nF/50V/X7R
+Added Member To Class: ClassName=U_System_power Member=Component J10 (J8) 2-pin, 5.08 mm

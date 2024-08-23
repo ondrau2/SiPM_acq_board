@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetFH1_1 Pin=J10-1
+Removed Pin From Net: NetName=GND Pin=J10-2
+Removed Member From Class: ClassName=U_Comparator2 Member=C113
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=J10
+Removed Member From Class: ClassName=U_Comparator1 Member=U19
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=NetFH1_1 Pin=J10-2
+Added Member To Class: ClassName=U_Comparator2 Member=Component C85 (C72) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component J8 (J6) 1-port, RJ-45, No LED
+Added Member To Class: ClassName=U_Comparator1 Member=Component U14 (U10) LMV7271MFX
