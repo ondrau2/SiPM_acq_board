@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=NetU10_3 Pin=U10-3
+Removed Pin From Net: NetName=NetU10_4 Pin=U10-4
+Removed Pin From Net: NetName=NetU10_3 Pin=Y2-1
+Removed Pin From Net: NetName=NetU10_4 Pin=Y2-2
+Added Component: Designator=C116(sm_cap_0402)
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "UMK105CG120JV-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,1, 10=0,016, 50=0,016, 100=0,009, 1000=0,007, 10000=0,004 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "34771"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "963-UMK105CG120JV-F"; VariantName = "[No Variations]"
+Added Component: Designator=C117(sm_cap_0402)
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "UMK105CG120JV-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,1, 10=0,016, 50=0,016, 100=0,009, 1000=0,007, 10000=0,004 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "34771"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "963-UMK105CG120JV-F"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C116-1
+Added Pin To Net: NetName=NetU10_4 Pin=C116-2
+Added Pin To Net: NetName=GND Pin=C117-1
+Added Pin To Net: NetName=NetU10_3 Pin=C117-2
+Added Pin To Net: NetName=NetU10_4 Pin=U10-3
+Added Pin To Net: NetName=NetU10_3 Pin=U10-4
+Added Pin To Net: NetName=NetU10_4 Pin=Y2-1
+Added Pin To Net: NetName=NetU10_3 Pin=Y2-2
+Change Net Name : Old Net Name=NetU10_3 New Net Name=NetC117_2
+Change Net Name : Old Net Name=NetU10_4 New Net Name=NetC116_2
+Added Member To Class: ClassName=U_MCU Member=Component C116 12pF/50V/C0G
+Added Member To Class: ClassName=U_MCU Member=Component C117 12pF/50V/C0G

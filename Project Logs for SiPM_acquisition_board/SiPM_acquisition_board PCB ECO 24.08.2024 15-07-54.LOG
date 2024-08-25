@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=NetC59_1 Pin=C59-1
+Removed Pin From Net: NetName=GND Pin=C59-2
+Removed Pin From Net: NetName=NetC60_1 Pin=C60-1
+Removed Pin From Net: NetName=GND Pin=C60-2
+Removed Pin From Net: NetName=NetC60_1 Pin=U10-5
+Removed Pin From Net: NetName=NetC59_1 Pin=U10-6
+Removed Pin From Net: NetName=NetC59_1 Pin=Y1-1
+Removed Pin From Net: NetName=NetC60_1 Pin=Y1-3
+Change component parameters: Designator = "C59" ("C59"); Footprint = "sm_cap_0402"; UniqueID = "\NMEDYNOU\JHADIWYS" ("\NMEDYNOU\JHADIWYS")
+Change component parameters (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "UMK105CG120JV-F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0,1, 10=0,016, 50=0,016, 100=0,009, 1000=0,007, 10000=0,004 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "34771"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "963-UMK105CG120JV-F"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C60" ("C60"); Footprint = "sm_cap_0402"; UniqueID = "\NMEDYNOU\JFLILEBM" ("\NMEDYNOU\JFLILEBM")
+Change component parameters (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/30125/dumk-e-30125211.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129804.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129805.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/129/standardmultilayerceramiccaps-129806.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "UMK105CG120JV-F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0,1, 10=0,016, 50=0,016, 100=0,009, 1000=0,007, 10000=0,004 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "34771"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "963-UMK105CG120JV-F"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C59-1
+Added Pin To Net: NetName=NetC60_1 Pin=C59-2
+Added Pin To Net: NetName=GND Pin=C60-1
+Added Pin To Net: NetName=NetC59_1 Pin=C60-2
+Added Pin To Net: NetName=NetC59_1 Pin=U10-5
+Added Pin To Net: NetName=NetC60_1 Pin=U10-6
+Added Pin To Net: NetName=NetC60_1 Pin=Y1-1
+Added Pin To Net: NetName=NetC59_1 Pin=Y1-3
+Change Net Name : Old Net Name=NetC59_1 New Net Name=NetC60_2
+Change Net Name : Old Net Name=NetC60_1 New Net Name=NetC59_2

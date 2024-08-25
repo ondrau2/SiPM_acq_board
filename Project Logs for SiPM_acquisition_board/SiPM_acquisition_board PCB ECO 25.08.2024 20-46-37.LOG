@@ -1,0 +1,78 @@
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=C65
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=C65
+Removed Member From Class: ClassName=U_Sensor_Frontend2 Member=C68
+Removed Member From Class: ClassName=U_Sensor_Frontend3 Member=C68
+Removed Member From Class: ClassName=U_Amplifier1 Member=C97
+Removed Member From Class: ClassName=U_Amplifier2 Member=C97
+Removed Member From Class: ClassName=U_Amplifier3 Member=C97
+Removed Member From Class: ClassName=U_DAC2 Member=C97
+Removed Member From Class: ClassName=U_ESP_module Member=C97
+Removed Member From Class: ClassName=U_MCU Member=C97
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=C97
+Removed Member From Class: ClassName=U_Amplifier1 Member=C110
+Removed Member From Class: ClassName=U_Amplifier2 Member=C110
+Removed Member From Class: ClassName=U_Amplifier3 Member=C110
+Removed Member From Class: ClassName=U_Comparator1 Member=C110
+Removed Member From Class: ClassName=U_Comparator2 Member=C110
+Removed Member From Class: ClassName=U_Comparator3 Member=C110
+Removed Member From Class: ClassName=U_DAC2 Member=C110
+Removed Member From Class: ClassName=U_ESP_module Member=C110
+Removed Member From Class: ClassName=U_MCU Member=C110
+Removed Member From Class: ClassName=U_Sensor_Frontend1 Member=C110
+Removed Member From Class: ClassName=U_Comparator1 Member=C111
+Removed Member From Class: ClassName=U_Comparator2 Member=C111
+Removed Member From Class: ClassName=U_Comparator3 Member=C111
+Removed Member From Class: ClassName=HV Member=NetC81_2
+Removed Member From Class: ClassName=HV Member=NetC114_2
+Removed Member From Class: ClassName=HV Member=NetC117_2
+Added Member To Class: ClassName=U_MCU Member=Component C65 12pF/50V/C0G
+Added Member To Class: ClassName=U_MCU Member=Component C66 12pF/50V/C0G
+Added Member To Class: ClassName=U_MCU Member=Component C69 100nF/50V/X7R
+Added Member To Class: ClassName=U_ESP_module Member=Component C70 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_ESP_module Member=Component C71 100nF/50V/X7R
+Added Member To Class: ClassName=U_ESP_module Member=Component C72 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C73 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_DAC2 Member=Component C74 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C75 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C76 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C77 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC2 Member=Component C78 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component C79 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component C80 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend1 Member=Component C81 D.N.P.
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C82 1pF/50V/C0G
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C83 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C84 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C85 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier3 Member=Component C86 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C87 (C82) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C88 (C83) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C89 (C84) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C90 (C85) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier2 Member=Component C91 (C86) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C92 (C82) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C93 (C83) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C94 (C84) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C95 (C85) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Amplifier1 Member=Component C96 (C86) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator3 Member=Component C98 (C88) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator3 Member=Component C99 (C89) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator2 Member=Component C100 (C87) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Comparator2 Member=Component C101 (C88) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator2 Member=Component C102 (C89) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Comparator1 Member=Component C103 (C87) 1pF/50V/C0G
+Added Member To Class: ClassName=U_Comparator1 Member=Component C104 (C88) 1uF/50V/X5R
+Added Member To Class: ClassName=U_Comparator1 Member=Component C105 (C89) 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC1 Member=Component C106 (C73) 10uF/6.3V/X5R
+Added Member To Class: ClassName=U_DAC1 Member=Component C107 (C74) 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC1 Member=Component C108 (C75) 100nF/50V/X7R
+Added Member To Class: ClassName=U_DAC1 Member=Component C109 (C76) 100nF/50V/X7R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C112 (C79) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C113 (C80) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend2 Member=Component C114 (C81) D.N.P.
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C115 (C79) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C116 (C80) 1uF/100V/X5R
+Added Member To Class: ClassName=U_Sensor_Frontend3 Member=Component C117 (C81) D.N.P.
+Added Member To Class: ClassName=HV Member=Wire NetC79_2
+Added Member To Class: ClassName=HV Member=Wire NetC112_2
+Added Member To Class: ClassName=HV Member=Wire NetC115_2

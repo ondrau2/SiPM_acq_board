@@ -1,0 +1,22 @@
+Change Component Footprint: Designator=Y1 Old Footprint=XTAL_ABM8W-20.0000MHZ-8-D1X-T3 New Footprint=ABM8W-MFG
+Change Component Comment : Designator=Y1 Old Comment=ABM8W-20.0000MHZ-8-D1X-T3 New Comment=ABM8W-24.0000MHZ-8-B1U-T3
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "XTAL_ABM8W-20.0000MHZ-8-D1X-T3"; UniqueID = "\NMEDYNOU\OIDSPJTF" ("\NMEDYNOU\OIDSPJTF")
+Change component parameters (AddParameter): Name = "Category"; Value = "Crystals"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://abracon.com/Resonators/ABM8W.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://abracon.com/Resonators/ABM8W.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.octopart.com/ABM8W-24.0000MHZ-8-B1U-T3-Abracon-datasheet-101745424.pdf?src-supplier=Sager+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.octopart.com/ABM8W-24.0000MHZ-8-B1U-T3-Abracon-datasheet-101745424.pdf?src-supplier=Sager+Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR (Equivalent Series Resistance)"; Value = "50R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "24MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "750um"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Load Capacitance"; Value = "8pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Abracon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ABM8W-24.0000MHZ-8-B1U-T3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "70°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-20°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.55, 10=0.409, 50=0.409, 100=0.364, 1000=0.343, 10000=0.286 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1807"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "815-8W24-8B1UT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "0.001%"; VariantName = "[No Variations]"
