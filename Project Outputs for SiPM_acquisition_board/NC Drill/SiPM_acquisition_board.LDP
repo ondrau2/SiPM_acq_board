@@ -1,0 +1,4 @@
+Layer Pairs Export File for PCB: D:\AltiumProjects\SiPM_acq_board\SiPM_acquisition_board.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=sipm_acquisition_board-roundholes-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Plated_Slot_Holes|DrillFile=sipm_acquisition_board-slotholes-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=sipm_acquisition_board-roundholes-nonplated.txt|DrillLayers=gtl,gbl
