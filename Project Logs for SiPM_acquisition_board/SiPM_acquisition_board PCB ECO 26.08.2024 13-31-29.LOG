@@ -1,0 +1,11 @@
+Removed Member From Class: ClassName=U_MCU Member=TP13
+Added Component: Designator=C118(sm_cap_0603)
+Add component (AddParameter): Name = "Distributor"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://cz.mouser.com/ProductDetail/Yageo/CC0603KRX7R9BB104?qs=sGAEpiMZZMvsSlwiRhF8qgFnKIgZe697WZ9nrpNTeGg%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C118-1
+Added Pin To Net: NetName=+3V3 Pin=C118-2
+Added Pin To Net: NetName=+3V3 Pin=U10-1
+Added Member To Class: ClassName=U_MCU Member=Component C118 (C90) 100nF/50V/X7R
